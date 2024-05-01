@@ -52,19 +52,19 @@ const Slider = () => {
   };
   return (
     <>
-      <div className="grid  grid-cols-6 gap-3 justify-items-center  items-center">
-        <div className="prev w-[10%] col-span-1">
+      <div className="grid  grid-cols-6  justify-items-center  items-center gap-10 ">
+        <div className="prev w-[10%] col-span-1 hidden md:block">
           <button onClick={slidePrev} className='btn btn-primary'>Prev</button>
         </div>
-        <div className="slider-container col-span-4   w-[100%]">
+        <div className="slider-container md:col-span-4  col-span-6  w-[100%]  px-2 my-3 mx-3">
           <Swiper
-            slidesPerView={1}
+            slidesPerView={2}
             spaceBetween={10}
             loop={true}
 
             breakpoints={{
               640: {
-                slidesPerView: 1,
+                slidesPerView: 2,
                 spaceBetween: 10,
               },
               768: {
@@ -73,19 +73,19 @@ const Slider = () => {
               },
               1024: {
                 slidesPerView: 3,
-                spaceBetween: 50,
+                spaceBetween: 29,
               },
             }}
             modules={[]}
             
-            className="mySwiper "
+            className="mySwiper  "
           >
             {
               products.map(product => {
                 return (
                   <>
                     <SwiperSlide>
-                      <div className="card card-compact md:w-[286px] md:h-[288px] bg-base-100 shadow-xl">
+                      <div className="card card-compact  md:h-[288px] bg-base-100 shadow-xl">
                         <figure><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" /></figure>
                         <div className="card-body">
                           <h2 className="card-title">{product?.name}</h2>
@@ -107,7 +107,7 @@ const Slider = () => {
 
           </Swiper>
         </div>
-        <div className="next w-[10%] col-span-1 bg-slate-500">
+        <div className="next w-[10%] col-span-1 bg-slate-500 hidden md:block">
           <button onClick={slideNext} className='btn btn-primary'>Next</button>
         </div>
       </div>

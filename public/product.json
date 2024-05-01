@@ -1,0 +1,178 @@
+[
+  {
+    "id": 7,
+    "product": "Vegetables",
+    "name": "Onions",
+    "price": 1.29,
+    "discounted_price": 0.99,
+    "image": "onions.jpg",
+    "rating": 4.6,
+    "description": "Versatile bulb vegetable used in various culinary dishes.",
+    "category": "Vegetables"
+  },
+  {
+    "id": 8,
+    "product": "Vegetables",
+    "name": "Potatoes",
+    "price": 2.49,
+    "discounted_price": 2.19,
+    "image": "potatoes.jpg",
+    "rating": 4.7,
+    "description": "Starchy tuber vegetable commonly used in cooking.",
+    "category": "Vegetables"
+  },
+  {
+    "id": 9,
+    "product": "Vegetables",
+    "name": "Lettuce",
+    "price": 1.99,
+    "discounted_price": 1.79,
+    "image": "lettuce.jpg",
+    "rating": 4.8,
+    "description": "Crisp and refreshing leafy green used in salads and sandwiches.",
+    "category": "Vegetables"
+  },
+  {
+    "id": 10,
+    "product": "Vegetables",
+    "name": "Zucchini",
+    "price": 1.79,
+    "discounted_price": 1.59,
+    "image": "zucchini.jpg",
+    "rating": 4.6,
+    "description": "Mild-flavored squash vegetable often grilled or sautéed.",
+    "category": "Vegetables"
+  },
+  {
+    "id": 11,
+    "product": "Vegetables",
+    "name": "Green Beans",
+    "price": 2.29,
+    "discounted_price": 1.99,
+    "image": "greenbeans.jpg",
+    "rating": 4.7,
+    "description": "Nutritious legume vegetable rich in vitamins and minerals.",
+    "category": "Vegetables"
+  },
+  {
+    "id": 12,
+    "product": "Vegetables",
+    "name": "Mushrooms",
+    "price": 3.99,
+    "discounted_price": 3.49,
+    "image": "mushrooms.jpg",
+    "rating": 4.9,
+    "description": "Fleshy fungi vegetable with various culinary uses.",
+    "category": "Vegetables"
+  },
+  {
+    "id": 13,
+    "product": "Vegetables",
+    "name": "Asparagus",
+    "price": 3.49,
+    "discounted_price": 2.99,
+    "image": "asparagus.jpg",
+    "rating": 4.8,
+    "description": "Nutrient-rich vegetable with a distinct flavor and texture.",
+    "category": "Vegetables"
+  },
+  {
+    "id": 14,
+    "product": "Vegetables",
+    "name": "Cauliflower",
+    "price": 2.99,
+    "discounted_price": 2.49,
+    "image": "cauliflower.jpg",
+    "rating": 4.7,
+    "description": "Versatile cruciferous vegetable often used as a low-carb alternative.",
+    "category": "Vegetables"
+  },
+  {
+    "id": 15,
+    "product": "Vegetables",
+    "name": "Radishes",
+    "price": 1.49,
+    "discounted_price": 1.29,
+    "image": "radishes.jpg",
+    "rating": 4.6,
+    "description": "Crisp and peppery root vegetable used in salads and garnishes.",
+    "category": "Vegetables"
+  },
+  {
+    "id": 16,
+    "product": "Vegetables",
+    "name": "Celery",
+    "price": 1.79,
+    "discounted_price": 1.59,
+    "image": "celery.jpg",
+    "rating": 4.5,
+    "description": "Crunchy and aromatic stalk vegetable often used in soups and salads.",
+    "category": "Vegetables"
+  },
+  {
+    "id": 1,
+    "product": "Vegetables",
+    "name": "Broccoli",
+    "price": 2.99,
+    "discounted_price": 2.49,
+    "image": "broccoli.jpg",
+    "rating": 4.8,
+    "description": "Nutritious green vegetable high in fiber and vitamins.",
+    "category": "Vegetables"
+  },
+  {
+    "id": 2,
+    "product": "Vegetables",
+    "name": "Carrots",
+    "price": 1.99,
+    "discounted_price": 1.79,
+    "image": "carrots.jpg",
+    "rating": 4.7,
+    "description": "Sweet and crunchy root vegetable rich in beta-carotene.",
+    "category": "Vegetables"
+  },
+  {
+    "id": 3,
+    "product": "Vegetables",
+    "name": "Spinach",
+    "price": 3.49,
+    "discounted_price": 2.99,
+    "image": "spinach.jpg",
+    "rating": 4.9,
+    "description": "Dark leafy green packed with iron, vitamins, and minerals.",
+    "category": "Vegetables"
+  },
+  {
+    "id": 4,
+    "product": "Vegetables",
+    "name": "Tomatoes",
+    "price": 1.49,
+    "discounted_price": 1.29,
+    "image": "tomatoes.jpg",
+    "rating": 4.6,
+    "description": "Juicy and flavorful fruit often used in salads and sauces.",
+    "category": "Vegetables"
+  },
+  {
+    "id": 5,
+    "product": "Vegetables",
+    "name": "Bell Peppers",
+    "price": 2.79,
+    "discounted_price": 2.49,
+    "image": "bellpeppers.jpg",
+    "rating": 4.7,
+    "description": "Colorful peppers rich in vitamins and antioxidants.",
+    "category": "Vegetables"
+  },
+  {
+    "id": 6,
+    "product": "Vegetables",
+    "name": "Cucumbers",
+    "price": 1.69,
+    "discounted_price": 1.49,
+    "image": "cucumbers.jpg",
+    "rating": 4.5,
+    "description": "Cool and refreshing vegetable often used in salads.",
+    "category": "Vegetables"
+  }
+]

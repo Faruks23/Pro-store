@@ -1,6 +1,6 @@
 
 'use client'
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 // Import Swiper React components
 import { Swiper, SwiperSlide, useSwiper } from 'swiper/react';
 
@@ -9,32 +9,14 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import './slider'
 
-// import required modules
-import { Pagination } from 'swiper/modules';
 
-interface productType {
-  id:number
-  product: string,
-  name: string,
-  price: number,
-  discounted_price: number,
-  image: "broccoli.jpg",
-  rating: number,
-  description:string,
-  category: string,
-}
+import useProducts from '@/Components/Hooks/useProduct';
+
 
 const Slider = () => {
 
-  const [products, setProducts] = useState < productType []>([])
-  useEffect(() => {
-    fetch('/product.json')
-      .then(res => res.json())
-      .then(data => {
-      setProducts(data)
-    })
-    
-  }, [])
+  const { data, isLoading, error } = useProducts();
+
   const swiper = useSwiper();
 
   const slideNext = () => {
@@ -50,6 +32,11 @@ const Slider = () => {
     }
      
   };
+  if (isLoading) {
+    return <div>Loading...</div>;
+  }
+
+
   return (
     <>
       <div className="grid  grid-cols-6  justify-items-center  items-center gap-10 ">
@@ -81,7 +68,7 @@ const Slider = () => {
             className="mySwiper  "
           >
             {
-              products.map(product => {
+              data.map(product => {
                 return (
                   <>
                     <SwiperSlide>

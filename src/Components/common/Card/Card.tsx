@@ -4,7 +4,7 @@ import Discount from '../Discount';
 const Card = ({product}:{product:any}) => {
   return (
     <div className=''>
-      <div className="card card-compact  md:h-[400px] bg-base-100 shadow-xl relative">
+      <div className="card card-compact  md:h-[400px] bg-base-100  relative border">
         <figure><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes"  className=' h-[360px] object-cover'/></figure>
         <div className="card-body">
           <h2 className="card-title">{product?.name}</h2>

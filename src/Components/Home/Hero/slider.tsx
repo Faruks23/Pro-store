@@ -11,6 +11,7 @@ import './slider'
 
 
 import useProducts from '@/Components/Hooks/useProduct';
+import Discount from '@/Components/common/Discount';
 
 
 const Slider = () => {
@@ -39,19 +40,17 @@ const Slider = () => {
 
   return (
     <>
-      <div className="grid  grid-cols-6  justify-items-center  items-center gap-10 ">
-        <div className="prev w-[10%] col-span-1 hidden md:block">
-          <button onClick={slidePrev} className='btn btn-primary'>Prev</button>
-        </div>
-        <div className="slider-container md:col-span-4  col-span-6  w-[100%]  px-2 my-3 mx-3">
+      <div className="px-5  md:mx-32 mt-4 ">
+        
+        <div className="slider-container  px-2 my-3 mx-3">
           <Swiper
-            slidesPerView={2}
+            slidesPerView={1}
             spaceBetween={10}
             loop={true}
 
             breakpoints={{
               640: {
-                slidesPerView: 2,
+                slidesPerView: 1,
                 spaceBetween: 10,
               },
               768: {
@@ -72,16 +71,22 @@ const Slider = () => {
                 return (
                   <>
                     <SwiperSlide>
-                      <div className="card card-compact  md:h-[288px] bg-base-100 shadow-xl">
-                        <figure><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" /></figure>
+                      <div className="card card-compact  h-[288px] bg-base-100  relative border">
+                        <figure><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" className=' h-[360px] object-cover' /></figure>
                         <div className="card-body">
                           <h2 className="card-title">{product?.name}</h2>
 
                           <div className="card-actions  justify-between ">
                             <div>
-                              <p><span className='text-gray-500  '>{product.discounted_price}</span>{product.price} </p>
+                              <p className='font-normal text-[#000000]'><span className='text-gray-500 line-through font-normal mr-2 '> ${product.discounted_price} </span > ${product.price} </p>
+                            </div>
+                            <div className='w-[21px] h-[21px] rounded-full border flex justify-center  items-center font-semibold   border-gray-500 cursor-pointer hover:scale-110 duration-200'>
+                              +
                             </div>
                           </div>
+                        </div>
+                        <div className="discount absolute top-4 left-4">
+                          <Discount value='10'></Discount>
                         </div>
                       </div>
                     </SwiperSlide>
@@ -94,9 +99,7 @@ const Slider = () => {
 
           </Swiper>
         </div>
-        <div className="next w-[10%] col-span-1 bg-slate-500 hidden md:block">
-          <button onClick={slideNext} className='btn btn-primary'>Next</button>
-        </div>
+       
       </div>
       
 

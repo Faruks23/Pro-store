@@ -16,7 +16,7 @@ const ProductPage = () => {
           <p className=' text-[#949494]'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         </div>
         <div className="product-container flex gap-8  mt-8">
-          <div className="left-filter w-[20%] sticky top-0 left-0 flex flex-col gap-5">
+          <div className="left-filter w-[20%]  sticky z-10 top-0 left-0 flex flex-col gap-5 cursor-pointer">
             {/* price filter */}
             <div className="price-filter py-[40px] px-[30px] border">
               <h1 className='  text-[22px] font-semibold'>Price Range</h1>
@@ -41,7 +41,7 @@ const ProductPage = () => {
             </div>
             {/* category filter */}
             <div className="price-filter py-[40px] px-[30px] border">
-              <h1 className='  text-[22px] font-semibold'>Price Range</h1>
+              <h1 className='  text-[22px] font-semibold'>Category/Brand</h1>
               <div className="list mt-[22px] flex flex-col gap-3">
                 <div className="flex gap-[10px] items-center">
                   <input type="checkbox" name="check" id="" />
@@ -58,6 +58,32 @@ const ProductPage = () => {
                 <div className="flex gap-[10px] items-center">
                   <input type="checkbox" name="check" id="" />
                   <label className=' font-normal text-[#414141]'> $20.00 - $ 50.00</label>
+                </div>
+              </div>
+            </div>
+            {/* rating filter */}
+            <div className="price-filter py-[40px] px-[30px] border">
+              <h1 className='  text-[22px] font-semibold'>Rating</h1>
+              <div className="list mt-[22px] flex flex-col gap-3">
+                <div className="flex gap-[10px] items-center">
+                  <input type="checkbox" name="check" id="" />
+                  <label className=' font-normal text-[#414141]'> 1 Star</label>
+                </div>
+                <div className="flex gap-[10px] items-center">
+                  <input type="checkbox" name="check" id="" />
+                  <label className=' font-normal text-[#414141]'> 2 Star</label>
+                </div>
+                <div className="flex gap-[10px] items-center">
+                  <input type="checkbox" name="check" id="" />
+                  <label className=' font-normal text-[#414141]'> 3 Star</label>
+                </div>
+                <div className="flex gap-[10px] items-center">
+                  <input type="checkbox" name="check" id="" />
+                  <label className=' font-normal text-[#414141]'>4 Start</label>
+                </div>
+                <div className="flex gap-[10px] items-center">
+                  <input type="checkbox" name="check" id="" />
+                  <label className=' font-normal text-[#414141]'>5 Start</label>
                 </div>
               </div>
             </div>

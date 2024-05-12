@@ -23,8 +23,8 @@ const navList = [
 ]
 const Header = () => {
   return (
-    <div className='w-full  fixed top-[0px] left-0 mb-[30px]  text-white  z-50'>
-      <div className="navbar  bg-gray-500 border-b py-4 w-full  px-[5vw]">
+    <div className='w-full  fixed top-[0px] left-0 mb-[30px]    z-50'>
+      <div className="navbar   bg-white border-b py-4 w-full  px-[5vw]">
         <div className="navbar-start ">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -36,7 +36,7 @@ const Header = () => {
                   return (
                     <>
                       <Link key={index+1} href={list.path}>
-                        <li>{list.name}</li>
+                        <li c>{list.name}</li>
                       </Link>
                     </>
                   )
@@ -44,7 +44,7 @@ const Header = () => {
               }
             </ul>
           </div>
-          <a className=" text-2xl font-bold">Pro Store</a>
+          <p className="text-2xl font-bold" > Pro Store</p>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1 gap-10 ">
@@ -53,7 +53,7 @@ const Header = () => {
                 return (
                   <>
                     <Link key={index + 1} href={list.path}>
-                      <li>{list.name}</li>
+                      <li className=' text-xl font-serif hover-underline-animation'>{list.name}</li>
                     </Link>
                   </>
                 )

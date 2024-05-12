@@ -2,7 +2,7 @@ import React from 'react';
 
 const Discount = ({value}:{value:string}) => {
   return (
-    <p className='!py-[6px] !px-[12px] rounded-[14px]  bg-[#3D3D3D] text-white'>
+    <p className='!py-[3px] !px-[9px] rounded-[3px]  bg-[#f57207] text-white'>
      -{value }% 
     </p>
   );

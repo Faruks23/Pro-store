@@ -36,7 +36,7 @@ const Header = () => {
                   return (
                     <>
                       <Link key={index+1} href={list.path}>
-                        <li c>{list.name}</li>
+                        <li className='text-xl font-serif hover-underline-animation py-2'>{list.name}</li>
                       </Link>
                     </>
                   )

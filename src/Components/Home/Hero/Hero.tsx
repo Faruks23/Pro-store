@@ -19,7 +19,7 @@ const Hero = () => {
 
       </div>
       
-      <div className="sap  bg-blue-300 w-[300px] h-[300px] absolute top-[20%] right-[40%]   blur-3xl   opacity-30 z-0">
+      <div className="sap  bg-blue-200 w-[300px] h-[300px] absolute top-[20%] right-[40%]   blur-3xl   opacity-30 z-0">
 
       </div>
     </div>

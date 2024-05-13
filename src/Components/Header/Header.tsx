@@ -18,7 +18,7 @@ const navList = [
   
   {
     name: "Dashboard",
-    path:'/dashboard',
+    path:'/dashboard/all-product',
   },
 ]
 const Header = () => {

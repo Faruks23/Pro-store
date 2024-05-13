@@ -1,121 +1,10 @@
-[
-  {
-    "id": 7,
-    "product": "Vegetables",
-    "name": "Onions",
-    "price": 1.29,
-    "discounted_price": 0.99,
-    "image": "onions.jpg",
-    "rating": 4.6,
-    "description": "Versatile bulb vegetable used in various culinary dishes.",
-    "category": "Vegetables"
-  },
-  {
-    "id": 8,
-    "product": "Vegetables",
-    "name": "Potatoes",
-    "price": 2.49,
-    "discounted_price": 2.19,
-    "image": "potatoes.jpg",
-    "rating": 4.7,
-    "description": "Starchy tuber vegetable commonly used in cooking.",
-    "category": "Vegetables"
-  },
-  {
-    "id": 9,
-    "product": "Vegetables",
-    "name": "Lettuce",
-    "price": 1.99,
-    "discounted_price": 1.79,
-    "image": "lettuce.jpg",
-    "rating": 4.8,
-    "description": "Crisp and refreshing leafy green used in salads and sandwiches.",
-    "category": "Vegetables"
-  },
-  {
-    "id": 10,
-    "product": "Vegetables",
-    "name": "Zucchini",
-    "price": 1.79,
-    "discounted_price": 1.59,
-    "image": "zucchini.jpg",
-    "rating": 4.6,
-    "description": "Mild-flavored squash vegetable often grilled or sautéed.",
-    "category": "Vegetables"
-  },
-  {
-    "id": 11,
-    "product": "Vegetables",
-    "name": "Green Beans",
-    "price": 2.29,
-    "discounted_price": 1.99,
-    "image": "greenbeans.jpg",
-    "rating": 4.7,
-    "description": "Nutritious legume vegetable rich in vitamins and minerals.",
-    "category": "Vegetables"
-  },
-  {
-    "id": 12,
-    "product": "Vegetables",
-    "name": "Mushrooms",
-    "price": 3.99,
-    "discounted_price": 3.49,
-    "image": "mushrooms.jpg",
-    "rating": 4.9,
-    "description": "Fleshy fungi vegetable with various culinary uses.",
-    "category": "Vegetables"
-  },
-  {
-    "id": 13,
-    "product": "Vegetables",
-    "name": "Asparagus",
-    "price": 3.49,
-    "discounted_price": 2.99,
-    "image": "asparagus.jpg",
-    "rating": 4.8,
-    "description": "Nutrient-rich vegetable with a distinct flavor and texture.",
-    "category": "Vegetables"
-  },
-  {
-    "id": 14,
-    "product": "Vegetables",
-    "name": "Cauliflower",
-    "price": 2.99,
-    "discounted_price": 2.49,
-    "image": "cauliflower.jpg",
-    "rating": 4.7,
-    "description": "Versatile cruciferous vegetable often used as a low-carb alternative.",
-    "category": "Vegetables"
-  },
-  {
-    "id": 15,
-    "product": "Vegetables",
-    "name": "Radishes",
-    "price": 1.49,
-    "discounted_price": 1.29,
-    "image": "radishes.jpg",
-    "rating": 4.6,
-    "description": "Crisp and peppery root vegetable used in salads and garnishes.",
-    "category": "Vegetables"
-  },
-  {
-    "id": 16,
-    "product": "Vegetables",
-    "name": "Celery",
-    "price": 1.79,
-    "discounted_price": 1.59,
-    "image": "celery.jpg",
-    "rating": 4.5,
-    "description": "Crunchy and aromatic stalk vegetable often used in soups and salads.",
-    "category": "Vegetables"
-  },
-  {
+[{
     "id": 1,
     "product": "Vegetables",
-    "name": "Broccoli",
+    "name":"broccoli",
     "price": 2.99,
     "discounted_price": 2.49,
-    "image": "broccoli.jpg",
+    "image": " https://w7.pngwing.com/pngs/1023/225/png-transparent-broccoli-organic-food-vegetable-broccoli-leaf-vegetable-food-cooking-thumbnail.png",
     "rating": 4.8,
     "description": "Nutritious green vegetable high in fiber and vitamins.",
     "category": "Vegetables"
@@ -126,7 +15,7 @@
     "name": "Carrots",
     "price": 1.99,
     "discounted_price": 1.79,
-    "image": "carrots.jpg",
+    "image": "https://img.freepik.com/free-photo/realistic-image-bunch-carrots-colourful-background_125540-3798.jpg",
     "rating": 4.7,
     "description": "Sweet and crunchy root vegetable rich in beta-carotene.",
     "category": "Vegetables"
@@ -137,7 +26,7 @@
     "name": "Spinach",
     "price": 3.49,
     "discounted_price": 2.99,
-    "image": "spinach.jpg",
+    "image": "https://images.unsplash.com/photo-1576045057995-568f588f82fb?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c3BpbmFjaHxlbnwwfHwwfHx8MA%3D%3D",
     "rating": 4.9,
     "description": "Dark leafy green packed with iron, vitamins, and minerals.",
     "category": "Vegetables"
@@ -148,7 +37,7 @@
     "name": "Tomatoes",
     "price": 1.49,
     "discounted_price": 1.29,
-    "image": "tomatoes.jpg",
+    "image": "https://t4.ftcdn.net/jpg/03/27/96/23/360_F_327962332_6mb5jQLnTOjhYeXML7v45Hc5eED2GYOD.jpg",
     "rating": 4.6,
     "description": "Juicy and flavorful fruit often used in salads and sauces.",
     "category": "Vegetables"
@@ -159,7 +48,7 @@
     "name": "Bell Peppers",
     "price": 2.79,
     "discounted_price": 2.49,
-    "image": "bellpeppers.jpg",
+    "image": "https://img.freepik.com/free-photo/colorful-bell-pepper_74190-255.jpg",
     "rating": 4.7,
     "description": "Colorful peppers rich in vitamins and antioxidants.",
     "category": "Vegetables"
@@ -170,9 +59,120 @@
     "name": "Cucumbers",
     "price": 1.69,
     "discounted_price": 1.49,
-    "image": "cucumbers.jpg",
+    "image": "https://img.freepik.com/premium-photo/cucumber-vegetable-isolated-white-background_42033-135.jpg",
     "rating": 4.5,
     "description": "Cool and refreshing vegetable often used in salads.",
     "category": "Vegetables"
+  },
+  {
+    "id": 7,
+    "product": "Vegetables",
+    "name": "Onions",
+    "price": 1.29,
+    "discounted_price": 0.99,
+    "image": "https://img.freepik.com/free-photo/red-onion-whole-isolated-white_146671-19175.jpg",
+    "rating": 4.6,
+    "description": "Versatile bulb vegetable used in various culinary dishes.",
+    "category": "Vegetables"
+  },
+  {
+    "id": 8,
+    "product": "Vegetables",
+    "name": "Potatoes",
+    "price": 2.49,
+    "discounted_price": 2.19,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0VwNg2CWf1JB2Zd6khCTE3PUtPi1G9_WP2fShC5ZLRLTnHvWtidhXMfz5lxGWtrh_TgA&usqp=CAU",
+    "rating": 4.7,
+    "description": "Starchy tuber vegetable commonly used in cooking.",
+    "category": "Vegetables"
+  },
+  {
+    "id": 9,
+    "product": "Vegetables",
+    "name": "Lettuce",
+    "price": 1.99,
+    "discounted_price": 1.79,
+    "image": "https://toppng.com/uploads/preview/lettuce-11546982214ng2bne29af.png",
+    "rating": 4.8,
+    "description": "Crisp and refreshing leafy green used in salads and sandwiches.",
+    "category": "Vegetables"
+  },
+  {
+    "id": 10,
+    "product": "Vegetables",
+    "name": "Zucchini",
+    "price": 1.79,
+    "discounted_price": 1.59,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEkfZrVLBdyhZulZiAyxRSKYn25UPVo4FhEpa_eaIXwA&s",
+    "rating": 4.6,
+    "description": "Mild-flavored squash vegetable often grilled or sautéed.",
+    "category": "Vegetables"
+  },
+  {
+    "id": 11,
+    "product": "Vegetables",
+    "name": "Green Beans",
+    "price": 2.29,
+    "discounted_price": 1.99,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSk6KaHXlOY3OyRPtAbJcc-o8l1QeCev0fsRyrE54iMug&s",
+    "rating": 4.7,
+    "description": "Nutritious legume vegetable rich in vitamins and minerals.",
+    "category": "Vegetables"
+  },
+  {
+    "id": 12,
+    "product": "Vegetables",
+    "name": "Mushrooms",
+    "price": 3.99,
+    "discounted_price": 3.49,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTR1k0FyGpsYgvtslDy9MhT-0NLlXZkpIRmKwFfN4Wlh6vG1Ju-uQDQ9Wu8an6WjFkHvBg&usqp=CAU",
+    "rating": 4.9,
+    "description": "Fleshy fungi vegetable with various culinary uses.",
+    "category": "Vegetables"
+  },
+  {
+    "id": 13,
+    "product": "Vegetables",
+    "name": "Asparagus",
+    "price": 3.49,
+    "discounted_price": 2.99,
+    "image": "https://www.shutterstock.com/image-photo/asparagus-fresh-pickled-green-bunches-600nw-1673452201.jpg",
+    "rating": 4.8,
+    "description": "Nutrient-rich vegetable with a distinct flavor and texture.",
+    "category": "Vegetables"
+  },
+  {
+    "id": 14,
+    "product": "Vegetables",
+    "name": "Cauliflower",
+    "price": 2.99,
+    "discounted_price": 2.49,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRs8MHYNh3Hdy9fpZKlTzWZMY287SROvZKjdA&s",
+    "rating": 4.7,
+    "description": "Versatile cruciferous vegetable often used as a low-carb alternative.",
+    "category": "Vegetables"
+  },
+  {
+    "id": 15,
+    "product": "Vegetables",
+    "name": "radishes",
+    "price": 1.49,
+    "discounted_price": 1.29,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-Q91aGbj2yhTtR9fQndCczPoJl4LqJzA6j7opb_ljtQ&s",
+    "rating": 4.6,
+    "description": "Crisp and peppery root vegetable used in salads and garnishes.",
+    "category": "Vegetables"
+  },
+  {
+    "id": 16,
+    "product": "Vegetables",
+    "name": "Celery",
+    "price": 1.79,
+    "discounted_price": 1.59,
+    "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBqwvq33K86_YJRMxi_YFf84jw0kes-aBchw&s",
+    "rating": 4.5,
+    "description": "Crunchy and aromatic stalk vegetable often used in soups and salads.",
+    "category": "Vegetables"
   }
+  
 ]

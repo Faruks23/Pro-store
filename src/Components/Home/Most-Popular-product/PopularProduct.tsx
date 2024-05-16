@@ -19,7 +19,7 @@ const PopularProduct = () => {
           <ViewButton title='View All'></ViewButton>
         </div>
         <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-[3vw] mt-10'>
-          {data.slice(0, 8).map(products => {
+          {data.slice(8, 16).map(products => {
             return (
 
               <>

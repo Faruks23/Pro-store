@@ -16,7 +16,7 @@ const FlashSale = () => {
       </div>
       <div className="flash-sale-card-container container mx-auto">
         <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-[3vw]'>
-          {data.slice(0,4).map(products => {
+          {data.slice(4,8).map(products => {
             return (
               
               <>

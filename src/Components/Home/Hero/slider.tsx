@@ -12,6 +12,7 @@ import './slider'
 
 import useProducts from '@/Components/Hooks/useProduct';
 import Discount from '@/Components/common/Discount';
+import Image from 'next/image';
 
 
 const Slider = () => {
@@ -72,7 +73,7 @@ const Slider = () => {
                   <>
                     <SwiperSlide>
                       <div className="card card-compact  h-[288px] bg-base-100  relative border">
-                        <figure><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" className=' h-[360px] object-cover' /></figure>
+                        <figure><Image width={288} height={200} alt='product-img' src={product.image}></Image></figure>
                         <div className="card-body">
                           <h2 className="card-title">{product?.name}</h2>
 

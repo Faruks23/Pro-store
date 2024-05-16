@@ -7,7 +7,7 @@ const Card = ({product}:{product:any}) => {
     <Link href={`/products/${product.id}`}>
       <div className=''>
         <div className="card card-compact  md:h-[400px] bg-base-100  relative border">
-          <figure><img src={product.image} alt="Shoes" className=' h-[360px]  object-scale-down' /></figure>
+          <figure><img src={product.image} alt="Shoes" className=' h-[360px]   object-scale-down ' /></figure>
           <div className="card-body">
             <h2 className="card-title">{product?.name}</h2>
 

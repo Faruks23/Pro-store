@@ -24,19 +24,19 @@ const ProductPage = () => {
                 <div className="flex gap-[10px] items-center">
                   <input type="checkbox" name="check" id="" />
                   <label className=' font-normal text-[#414141]'> $20.00 - $ 50.00</label>
-                 </div>
+                </div>
                 <div className="flex gap-[10px] items-center">
                   <input type="checkbox" name="check" id="" />
                   <label className=' font-normal text-[#414141]'> $20.00 - $ 50.00</label>
-                 </div>
+                </div>
                 <div className="flex gap-[10px] items-center">
                   <input type="checkbox" name="check" id="" />
                   <label className=' font-normal text-[#414141]'> $20.00 - $ 50.00</label>
-                 </div>
+                </div>
                 <div className="flex gap-[10px] items-center">
                   <input type="checkbox" name="check" id="" />
                   <label className=' font-normal text-[#414141]'> $20.00 - $ 50.00</label>
-                 </div>
+                </div>
               </div>
             </div>
             {/* category filter */}
@@ -100,7 +100,7 @@ const ProductPage = () => {
               )
             })}
           </div>
-         </div>
+        </div>
       </div>
     </div>
   );

@@ -37,7 +37,7 @@ const Slider = () => {
   if (isLoading) {
     return <div>Loading...</div>;
   }
-
+console.log(data)
 
   return (
     <>
@@ -68,7 +68,7 @@ const Slider = () => {
             className="mySwiper  "
           >
             {
-              data.map(product => {
+              data?.map(product => {
                 return (
                   <>
                     <SwiperSlide>

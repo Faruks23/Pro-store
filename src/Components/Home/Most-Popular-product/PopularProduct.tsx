@@ -1,13 +1,18 @@
-"use client"
 
-import useProducts from '@/Components/Hooks/useProduct';
+import { productType } from '@/Components/Hooks/useProduct';
 import Card from '@/Components/common/Card/Card';
 import Title from '@/Components/common/Title';
 import ViewButton from '@/Components/common/ViewButton';
 import React from 'react';
 
-const PopularProduct = () => {
-  const { data, isLoading, error } = useProducts();
+const PopularProduct = async () => {
+
+  const res = await fetch("https://pro-store-server.vercel.app/products", {
+    next: {
+      revalidate: 30,
+    }
+  })
+  const data = await res.json();
   return (
     <div className='mt-[100px]'>
       <div className="container mx-auto">
@@ -19,7 +24,7 @@ const PopularProduct = () => {
           <ViewButton title='View All'></ViewButton>
         </div>
         <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-[3vw] mt-10'>
-          {data.slice(8, 16).map(products => {
+          {data.slice(8, 16).map((products: productType) => {
             return (
 
               <>
@@ -29,7 +34,7 @@ const PopularProduct = () => {
             )
           })}
         </div>
-     </div>
+      </div>
     </div>
   );
 };

@@ -1,12 +1,27 @@
 'use client'
 
-import useProducts from '@/Components/Hooks/useProduct';
+import useProducts, { productType } from '@/Components/Hooks/useProduct';
 import Card from '@/Components/common/Card/Card';
 import Title from '@/Components/common/Title';
 import React from 'react';
 
-const ProductPage = () => {
-  const { data, isLoading, error } = useProducts();
+const ProductPage =async () => {
+
+  const ProductRes = await fetch("https://pro-store-server.vercel.app/products", {
+    next: {
+      revalidate: 30,
+    }
+  })
+  const data = await ProductRes.json();
+
+
+  const res = await fetch("https://pro-store-server.vercel.app/brands", {
+    next: {
+      revalidate: 30,
+    }
+  })
+  const brands = await res.json();
+
   return (
     <div className=' py-32'>
       <div className="container mx-auto">
@@ -43,22 +58,20 @@ const ProductPage = () => {
             <div className="price-filter py-[40px] px-[30px] border">
               <h1 className='  text-[22px] font-semibold'>Category/Brand</h1>
               <div className="list mt-[22px] flex flex-col gap-3">
-                <div className="flex gap-[10px] items-center">
-                  <input type="checkbox" name="check" id="" />
-                  <label className=' font-normal text-[#414141]'> $20.00 - $ 50.00</label>
-                </div>
-                <div className="flex gap-[10px] items-center">
-                  <input type="checkbox" name="check" id="" />
-                  <label className=' font-normal text-[#414141]'> $20.00 - $ 50.00</label>
-                </div>
-                <div className="flex gap-[10px] items-center">
-                  <input type="checkbox" name="check" id="" />
-                  <label className=' font-normal text-[#414141]'> $20.00 - $ 50.00</label>
-                </div>
-                <div className="flex gap-[10px] items-center">
-                  <input type="checkbox" name="check" id="" />
-                  <label className=' font-normal text-[#414141]'> $20.00 - $ 50.00</label>
-                </div>
+               
+                {
+                  brands.map((brand:any) => {
+                    return (
+                      <>
+                        <div className="flex gap-[10px] items-center">
+                          <input type="checkbox" name="check" id="" />
+                          <label className=' font-normal text-[#414141]'>{ brand.name}</label>
+                        </div>
+                      </>
+                    )
+                  })
+                 }
+               
               </div>
             </div>
             {/* rating filter */}
@@ -90,11 +103,11 @@ const ProductPage = () => {
           </div>
           <div className="card-container grid grid-cols-1  md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-5 lg:gap-8  w-[80%]">
 
-            {data.map(products => {
+            {data.map((products:productType) => {
               return (
 
                 <>
-                  <Card product={products} key={products.id}></Card>
+                  <Card product={products} key={products._id}></Card>
                 </>
 
               )

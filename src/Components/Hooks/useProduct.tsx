@@ -2,7 +2,8 @@
 
 import { useState, useEffect } from 'react';
 
-interface productType {
+export interface productType {
+  _id: string,
   id: number
   product: string,
   name: string,
@@ -15,7 +16,7 @@ interface productType {
 }
 
 const useProducts = () => {
-  const [data, setData] = useState<productType []>([]);
+  const [data, setData] = useState<productType[]>([]);
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState(null);
 
@@ -23,7 +24,7 @@ const useProducts = () => {
     const fetchData = async () => {
       setIsLoading(true);
       try {
-        const response = await fetch('/product.json');
+        const response = await fetch('https://pro-store-server.vercel.app/products');
         if (!response.ok) {
           throw new Error('Network response was not ok');
         }

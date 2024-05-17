@@ -1,5 +1,6 @@
 'use client'
 
+import CountDown from '@/Components/CountDown/CountDowen';
 import useProducts from '@/Components/Hooks/useProduct';
 import Card from '@/Components/common/Card/Card';
 import Title from '@/Components/common/Title';
@@ -7,9 +8,13 @@ import React from 'react';
 
 const FlashSalePage = () => {
   const { data, isLoading, error } = useProducts();
+  const initialTime = new Date().getTime() + 3196400000;
   return (
     <div className=' py-32'>
       <div className="container mx-auto">
+        <div className="hero">
+          <CountDown initialTime={initialTime}></CountDown>
+        </div>
         <div className="flash-sale-head">
           <Title title='Flash Sale'></Title>
           <h3 className='font-bold  mt-8' >Showing 1–12 of 24 item(s)</h3>

@@ -4,10 +4,10 @@ import Link from 'next/link';
 
 const Card = ({product}:{product:any}) => {
   return (
-    <Link href={`/products/${product.id}`}>
+    <Link href={{pathname:`/products/${product._id}`,query:{slug:product.name}}}>
       <div className=''>
         <div className="card card-compact  md:h-[400px] bg-base-100  relative border">
-          <figure><img src={product.image} alt="Shoes" className=' h-[360px]   object-scale-down ' /></figure>
+          <figure><img src={product.image} alt="Shoes" className=' h-[360px]  w-full  object-scale-down ' /></figure>
           <div className="card-body">
             <h2 className="card-title">{product?.name}</h2>
 
@@ -20,7 +20,7 @@ const Card = ({product}:{product:any}) => {
               </div>
             </div>
           </div>
-          <div className="discount absolute top-4 left-4">
+          <div className="discount absolute top-4 left-4 z-10">
             <Discount value='10'></Discount>
           </div>
         </div>

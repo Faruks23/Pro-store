@@ -1,6 +1,5 @@
-'use client'
 
-import useProducts, { productType } from '@/Components/Hooks/useProduct';
+import { productType } from '@/Components/Hooks/useProduct';
 import Card from '@/Components/common/Card/Card';
 import Title from '@/Components/common/Title';
 import React from 'react';

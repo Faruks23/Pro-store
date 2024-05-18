@@ -12,6 +12,9 @@ const FlashSalePage =async () => {
 
   const res = await fetch("https://pro-store-server.vercel.app/products")
   const data = await res.json();
+  if (!data) {
+    return <p>Loading....</p>
+  }
   return (
     <div className=' py-32'>
       <div className="container mx-auto">

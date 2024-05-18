@@ -14,12 +14,12 @@ const ProductPage =async () => {
   const data = await ProductRes.json();
 
 
-  const res = await fetch("https://pro-store-server.vercel.app/brands", {
-    next: {
-      revalidate: 30,
-    }
-  })
+  const res = await fetch("https://pro-store-server.vercel.app/brands")
   const brands = await res.json();
+  
+  if (!data && !brands) {
+    return <p>Loading...</p>
+  }
 
   return (
     <div className=' py-32'>

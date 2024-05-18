@@ -1,3 +1,5 @@
+
+"use client"
 import React, { useState, useEffect } from 'react';
 
 const CountDown = ({ initialTime }:{initialTime:number}) => {
@@ -39,7 +41,7 @@ const CountDown = ({ initialTime }:{initialTime:number}) => {
       <div className=" border text-white p-6 rounded-lg shadow-lg">
         <div className="flex flex-col items-center space-y-4">
           <div className="text-center">
-            <h2 className="text-2xl font-bold">Flash Sale!</h2>
+            <h2 className="text-2xl font-bold text-black">Flash Sale!</h2>
             <p className="text-black">Hurry, sale ends soon!</p>
           </div>
           <div className="flex items-center space-x-4">

@@ -1,6 +1,6 @@
 
 'use client'
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 // Import Swiper React components
 import { Swiper, SwiperSlide, useSwiper } from 'swiper/react';
 
@@ -10,34 +10,31 @@ import 'swiper/css/pagination';
 import './slider'
 
 
-import useProducts from '@/Components/Hooks/useProduct';
 import Discount from '@/Components/common/Discount';
 import Image from 'next/image';
+import { productType } from '@/Components/Hooks/useProduct';
+import Link from 'next/link';
 
 
 const Slider = () => {
 
-  const { data, isLoading, error } = useProducts();
+  
+  const [data, setData] = useState<productType []>([])
+  const [isLoading, setLoading] = useState(true)
 
-  const swiper = useSwiper();
+  useEffect(() => {
+    fetch('https://pro-store-server.vercel.app/products')
+      .then((res) => res.json())
+      .then((data) => {
+        setData(data)
+        setLoading(false)
+      })
+  }, [])
 
-  const slideNext = () => {
-    if (swiper) {
-      
-      swiper.slideNext();
-    }
-  };
+  if (isLoading) return <p>Loading...</p>
+  if (!data) return <p>No  data</p>
+  
 
-  const slidePrev = () => {
-    if (swiper) {
-      swiper.slidePrev();
-    }
-     
-  };
-  if (isLoading) {
-    return <div>Loading...</div>;
-  }
-console.log(data)
 
   return (
     <>
@@ -71,8 +68,9 @@ console.log(data)
               data?.map(product => {
                 return (
                   <>
-                    <SwiperSlide>
-                      <div className="card card-compact  h-[288px] bg-base-100  relative border">
+                    <SwiperSlide key={product._id}>
+                      <Link href={'/products'}>
+                        <div className="card card-compact  h-[288px] bg-base-100  relative border">
                         <figure><Image width={288} height={200} alt='product-img' src={product.image}></Image></figure>
                         <div className="card-body">
                           <h2 className="card-title">{product?.name}</h2>
@@ -89,7 +87,7 @@ console.log(data)
                         <div className="discount absolute top-4 left-4">
                           <Discount value='10'></Discount>
                         </div>
-                      </div>
+                      </div></Link>
                     </SwiperSlide>
                   </>
                 )

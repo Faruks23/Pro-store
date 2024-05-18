@@ -44,7 +44,7 @@ const Header = () => {
               }
             </ul>
           </div>
-          <p className="text-2xl font-bold" > Pro Store</p>
+          <p className="text-2xl font-bold italic up text-orange-500" >Organic Store</p>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1 gap-10 ">
@@ -53,7 +53,7 @@ const Header = () => {
                 return (
                   <>
                     <Link key={index + 1} href={list.path}>
-                      <li className=' text-xl font-serif hover-underline-animation'>{list.name}</li>
+                      <li className={`text-xl font-serif hover-underline-animation py-2 ${index == 3 && "bg-orange-500 px-2 rounded-sm  ml-[200px] text-white"}`}>{list.name}</li>
                     </Link>
                   </>
                 )

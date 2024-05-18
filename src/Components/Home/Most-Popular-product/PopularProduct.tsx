@@ -21,7 +21,7 @@ const PopularProduct = async () => {
             <Title title='Most Popular Products'></Title>
             <p className=' mt-5'>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam.</p>
           </div>
-          <ViewButton title='View All'></ViewButton>
+          <ViewButton path='/products' title='View All'></ViewButton>
         </div>
         <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-[3vw] mt-10'>
           {data.slice(8, 16).map((products: productType) => {
